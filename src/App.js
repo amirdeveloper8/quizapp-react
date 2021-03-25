@@ -9,8 +9,8 @@ function App() {
   return (
     <main className="container-fluid App">
       <Switch>
-        <Route path="/quiz-app/content" component={quizContent} />
-        <Route path="/quiz-app/questions" component={QuizQuestions} />
+        <Route path="/quizapp-react/content" component={quizContent} />
+        <Route path="/quizapp-react/questions" component={QuizQuestions} />
         <Route path="/quizapp-react" component={quizApp} />
         <Redirect from="/" exact to="/quizapp-react" />
       </Switch>

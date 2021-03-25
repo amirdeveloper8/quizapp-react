@@ -7,7 +7,7 @@ class quizApp extends Component {
     return (
       <div className="quiz-app">
         <h3 className="title-quiz">Quiz App</h3>
-        <Link className="quiz-content" to="/quiz-app/content">
+        <Link className="quiz-content" to="/quizapp-react/content">
           <button className="btn btn-outline-light quizapp-start-btn">
             شروع کن
           </button>

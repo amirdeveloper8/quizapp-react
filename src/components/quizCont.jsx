@@ -23,7 +23,7 @@ const quizContent = () => {
           <Link to="/quizapp-react">
             <button className="btn btn-danger">بازگشت</button>
           </Link>
-          <Link to="/quiz-app/questions">
+          <Link to="/quizapp-react/questions">
             <button className="btn btn-primary">شروع</button>
           </Link>
         </div>
