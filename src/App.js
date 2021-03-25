@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "@fortawesome/fontawesome-free";
+import { Route, Redirect, Switch } from "react-router-dom";
+import quizContent from "./components/quizCont";
+import quizApp from "./components/quizApp";
+import QuizQuestions from "./components/quizQuestions";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="container-fluid App">
+      <Switch>
+        <Route path="/quiz-app/content" component={quizContent} />
+        <Route path="/quiz-app/questions" component={QuizQuestions} />
+        <Route path="/quiz-app" component={quizApp} />
+        <Redirect from="/" exact to="/quiz-app" />
+      </Switch>
+    </main>
   );
 }
 
