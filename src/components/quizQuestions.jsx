@@ -59,10 +59,6 @@ function QuizQuestions() {
     }
   };
 
-  const refreshPage = () => {
-    window.location.reload();
-  };
-
   return (
     <div className="quiz-app" id="quiz-quest">
       <div className="row">
@@ -73,9 +69,9 @@ function QuizQuestions() {
               شما به {score} مورد از {info.length} مورد پاسخ درست داده اید{" "}
             </h4>
 
-            <button onClick={refreshPage} className="btn btn-danger my-5">
-              بازگشت
-            </button>
+            <Link className="quiz-content" to="/quizapp-react">
+              <button className="btn btn-danger my-5">بازگشت</button>
+            </Link>
           </div>
         ) : (
           <div className="d-flex flex-column align-items-center justify-content-center col-12">
