@@ -11,8 +11,8 @@ function App() {
       <Switch>
         <Route path="/quiz-app/content" component={quizContent} />
         <Route path="/quiz-app/questions" component={QuizQuestions} />
-        <Route path="/quiz-app" component={quizApp} />
-        <Redirect from="/" exact to="/quiz-app" />
+        <Route path="/quizapp-react" component={quizApp} />
+        <Redirect from="/" exact to="/quizapp-react" />
       </Switch>
     </main>
   );

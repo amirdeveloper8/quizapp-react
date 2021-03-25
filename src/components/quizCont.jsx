@@ -20,7 +20,7 @@ const quizContent = () => {
           قرار گیرد.
         </p>
         <div className="button-sec">
-          <Link to="/quiz-app">
+          <Link to="/quizapp-react">
             <button className="btn btn-danger">بازگشت</button>
           </Link>
           <Link to="/quiz-app/questions">
